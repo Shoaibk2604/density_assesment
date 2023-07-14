@@ -17,6 +17,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
 import { navItems } from "./navConfig";
+import { StyledBlackBtn } from "@/sections/home/homeStyled";
 const drawerWidth = 240;
 
 const Header = (props) => {
@@ -121,23 +122,15 @@ const Header = (props) => {
                 ))}
             </Box>
             <Box>
-              <Button
+              <StyledBlackBtn
                 component={Link}
                 href={"/"}
-                sx={{
-                  backgroundColor: "#000",
-                  color: "#fff",
-                  borderRadius: "3em",
-                  ":hover": {
-                    backgroundColor: "#000",
-                  },
-                }}
                 aria-owns="mouse-over-popover"
                 aria-haspopup="true"
                 variant="contained"
               >
                 Download app
-              </Button>
+              </StyledBlackBtn>
             </Box>
             <IconButton
               color="inherit"
