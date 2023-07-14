@@ -1,51 +1,48 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Grid,
+  Rating,
+  Stack,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import { StyledBox } from "./homeStyled";
 const Banner = () => {
   return (
     <React.Fragment>
-      <StyledBox>
         <Container>
+      <StyledBox>
           <Grid container spacing={2}>
-            <Grid item  sm={6} md={6} lg={6}>
+            <Grid item sm={6} md={6} lg={6}>
               <Box>
-                <Typography variant="h3">
-                  Your Logistic Solution For Business <br />
-                  Client & Driver’s
+                <Typography color="grey" fontWeight={600}>
+                  Ahead app
                 </Typography>
-                <Box >
-                  <Button
-                    variant="contained"
-                    size="large"
-                    sx={{ margin: "12px" }}
-                  >
-                    For Clients
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    size="large"
-                    sx={{ margin: "12px" }}
-                  >
-                    For Business
-                  </Button>
-                </Box>
-                <Box>
-                  <Button
-                    variant="contained"
-                    size="large"
-                    sx={{ margin: "12px" }}
-                  >
-                    For Driver
-                  </Button>
-                </Box>
+                <Typography variant="h1">
+                  Master Your Life by mastering emotions
+                </Typography>
+                <Stack direction="row" pt={3}>
+                  <Box
+                    component="img"
+                    src="/assets/appstore.png"
+                    width="11em"
+                    alt="appstore"
+                  />
+                  <Box>
+                    <Rating value={5} readOnly />
+                    <Typography>100+ AppStore reviews</Typography>
+                  </Box>
+                </Stack>
               </Box>
             </Grid>
             <Grid item sm={6} md={6} lg={6}>
-              <Box component="img" src={"/banner.jpg"} />
+              <Box component="img" src="/assets/mobile.png" />
             </Grid>
           </Grid>
-        </Container>
       </StyledBox>
+        </Container>
     </React.Fragment>
   );
 };

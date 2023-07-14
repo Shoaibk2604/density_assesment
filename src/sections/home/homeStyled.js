@@ -3,6 +3,7 @@ import { Box,  styled, Typography } from "@mui/material";
 export const StyledBox = styled(Box)(({ theme }) => ({
   backgroundColor: "#f6f6f7",
   padding: "5em",
+  borderRadius:"3em"
 }));
 export const StyledIconBox = styled(Box)(({ theme }) => ({
   textAlign: "center",
