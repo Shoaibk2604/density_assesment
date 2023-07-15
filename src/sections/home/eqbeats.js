@@ -15,12 +15,12 @@ const EqBeats = () => {
       <Box py={10}>
         <Container>
           <Grid container spacing={3}>
-            <Grid item sm={6} md={4} md={4}>
+            <Grid item sm={6} md={4} >
               <Box>
                 <Typography variant="h4">EQ beats IQ</Typography>
               </Box>
             </Grid>
-            <Grid item sm={6} md={4} md={4}>
+            <Grid item sm={6} md={4} >
               <Box>
                 <Typography variant="h6"  fontWeight={400} color="grey">
                   Let your friends, family, and co-workers (anonymously) rate
@@ -29,7 +29,7 @@ const EqBeats = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item sm={6} md={4} md={4}>
+            <Grid item sm={6} md={4} >
               <Box>
               <Typography variant="h6"  fontWeight={400} color="grey">
                   Let your friends, family, and co-workers (anonymously) rate

@@ -24,7 +24,7 @@ const Banner = () => {
             width="200px"
           />
           <Grid container spacing={2}>
-            <Grid item sm={6} md={6} md={6}>
+            <Grid item sm={6} md={6}>
               <Box>
                 <Typography component="div" color="grey" fontWeight={600}>
                   <TextTrasition
@@ -58,7 +58,7 @@ const Banner = () => {
                 </Stack>
               </Box>
             </Grid>
-            <Grid item sm={6} md={6} md={6}>
+            <Grid item sm={6} md={6} >
               <Box component="img" src="/assets/mobile.png" />
             </Grid>
           </Grid>
