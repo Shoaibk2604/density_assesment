@@ -16,7 +16,13 @@ const Banner = () => {
     <React.Fragment>
       <Container>
         <StyledBox>
-          <Ball color="blue" x={[500, 200, -80, -160]} y={[100, 250, 350, 450]} height="200px" width="200px"/>
+          <Ball
+            color="blue"
+            x={[500, 200, -80, -160]}
+            y={[100, 250, 350, 450]}
+            height="200px"
+            width="200px"
+          />
           <Grid container spacing={2}>
             <Grid item sm={6} md={6} lg={6}>
               <Box>

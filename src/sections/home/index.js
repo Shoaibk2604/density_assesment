@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import React from "react";
 import Banner from "./Banner";
 import Certificate from "./certificate";
@@ -11,7 +12,7 @@ import WorkWithUs from "./workwithus";
 
 const HomeSection = () => {
   return (
-    <>
+    <Box overflow={"hidden"}>
       <Banner />
       <EqBeats />
       <TotalCard />
@@ -22,7 +23,7 @@ const HomeSection = () => {
       <Certificate/>
       <WorkWithUs/>
       <Vacancies/>
-    </>
+    </Box>
   );
 };
 

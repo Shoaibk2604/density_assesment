@@ -9,57 +9,127 @@ import {
 } from "@mui/material";
 import React from "react";
 import { StyledBoxBall, StyledBoxDiv } from "./homeStyled";
+import { motion } from "framer-motion";
+import TextTrasition from "@/components/framer/textTrasition";
 
 const ThirdBanner = () => {
   return (
     <React.Fragment>
       <Container sx={{ position: "relative" }}>
-        <Card sx={{ backgroundColor: "#eff5ff",py:6,px:6 }}>
+        <Card sx={{ backgroundColor: "#eff5ff", py: 6, px: 6 }}>
           <CardContent>
             <Stack spacing={2} textAlign="center">
               <Typography variant="h6">
-                Let Your Friends, family, and co-workers (anonymously) rate your
-                social skills.
+              <TextTrasition
+                  name=" Let Your Friends, family, and co-workers (anonymously) rate your
+                  social skills."
+                  x="0rem"
+                  y="0rem"
+                  initialPosX="0rem"
+                  initialPosY="0em"
+                  initialScale={1}
+                  scale={0}
+                />
+               
               </Typography>
               <Typography variant="h2">
-                Ever wondered what others think of you?
+                <TextTrasition
+                  name="Ever wondered what others think of you?"
+                  x="0rem"
+                  y="5em"
+                  initialPosX="0rem"
+                  initialPosY="0em"
+                  initialScale={1}
+                  scale={0}
+                />
               </Typography>
             </Stack>
             <Box>
               <Grid container textAlign="center" py={5}>
                 <Grid item lg={4}>
                   <Box
-                    m="auto"
-                    component="img"
-                    src="/assets/badgeOne.png"
-                    alt="badge"
-                    width={60}
-                  />
-                  <Typography>
+                    component={motion.div}
+                    initial={{ scale: 0, rotate: -360 }}
+                    whileInView={{ scale: 1, rotate: 0 }}
+                    transition={{ duration: 0.8 }}
+                  >
+                    <Box
+                      m="auto"
+                      component="img"
+                      src="/assets/badgeOne.png"
+                      alt="badge"
+                      width={60}
+                    />
+                  </Box>
+                  <Typography
+                    component={motion.div}
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{
+                      type: "spring",
+                      damping: 4,
+                      stiffness: 50,
+                      restDelta: 0.001,
+                    }}
+                  >
                     Answer Questions on your social skills
                   </Typography>
                 </Grid>
                 <Grid item lg={4}>
                   <Box
-                    m="auto"
-                    component="img"
-                    src="/assets/badgetwo.png"
-                    alt="badge"
-                    width={60}
-                  />
-                  <Typography>
+                    component={motion.div}
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    <Box
+                      m="auto"
+                      component="img"
+                      src="/assets/badgetwo.png"
+                      alt="badge"
+                      width={60}
+                    />
+                  </Box>
+                  <Typography
+                    component={motion.div}
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{
+                      type: "spring",
+                      damping: 4,
+                      stiffness: 50,
+                      restDelta: 0.001,
+                    }}
+                  >
                     Let others anonymously answer the same quetions about you
                   </Typography>
                 </Grid>
                 <Grid item lg={4}>
                   <Box
-                    m="auto"
-                    component="img"
-                    src="/assets/badgethree.png"
-                    alt="badge"
-                    width={60}
-                  />
-                  <Typography>
+                    component={motion.div}
+                    initial={{ scale: 0, rotate: 360 }}
+                    whileInView={{ scale: 1, rotate: 0 }}
+                    transition={{ duration: 0.8 }}
+                  >
+                    <Box
+                      m="auto"
+                      component="img"
+                      src="/assets/badgethree.png"
+                      alt="badge"
+                      width={60}
+                    />
+                  </Box>
+                  <Typography
+                    component={motion.div}
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{
+                      type: "spring",
+                      damping: 4,
+                      stiffness: 50,
+                      restDelta: 0.001,
+                    }}
+                  >
                     Find out where you and others see things the same way- and
                     where not!
                   </Typography>
@@ -70,6 +140,15 @@ const ThirdBanner = () => {
               <Card sx={{ height: "12em" }}>
                 <CardContent>
                   <Box
+                    component={motion.div}
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{
+                      type: "spring",
+                      damping: 4,
+                      stiffness: 30,
+                      restDelta: 0.001,
+                    }}
                     sx={{
                       backgroundColor: "#d228ff",
                       position: "absolute",
@@ -81,6 +160,15 @@ const ThirdBanner = () => {
                     <Typography sx={{ color: "#fff" }}>You</Typography>
                   </Box>
                   <Box
+                    component={motion.div}
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{
+                      type: "spring",
+                      damping: 4,
+                      stiffness: 30,
+                      restDelta: 0.02,
+                    }}
                     sx={{
                       backgroundColor: "#0bf",
                       position: "absolute",
@@ -93,6 +181,15 @@ const ThirdBanner = () => {
                     <Typography sx={{ color: "#fff" }}>Anonymonos 1</Typography>
                   </Box>
                   <Box
+                    component={motion.div}
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{
+                      type: "spring",
+                      damping: 4,
+                      stiffness: 30,
+                      restDelta: 0.001,
+                    }}
                     sx={{
                       backgroundColor: "#ffe159",
                       position: "absolute",
@@ -104,6 +201,15 @@ const ThirdBanner = () => {
                     <Typography sx={{ color: "#fff" }}>Anonymonos 2</Typography>
                   </Box>
                   <Box
+                    component={motion.div}
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{
+                      type: "spring",
+                      damping: 4,
+                      stiffness: 30,
+                      restDelta: 0.001,
+                    }}
                     sx={{
                       backgroundColor: "#83ff0dba",
                       position: "absolute",

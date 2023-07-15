@@ -1,3 +1,5 @@
+import MouseBall from "@/components/framer/mouseball";
+import TextTrasition from "@/components/framer/textTrasition";
 import {
   Box,
   Card,
@@ -14,24 +16,77 @@ const SecondBanner = () => {
     <React.Fragment>
       <Box py={4}>
         <Container>
-          <Card sx={{ backgroundColor: "#ffe4fd", py:10,px:5 }}>
+          <Card
+            sx={{
+              backgroundColor: "#ffe4fd",
+              py: 10,
+              px: 5,
+              position: "relative",
+              overflow:"hidden"
+            }}
+          >
             <CardContent>
               <Box>
-                <Typography variant="h6" color="grey">Built out of frustration</Typography>
-                <Typography variant="h2">Meet the ahead app</Typography>
+                <MouseBall />
+                <Typography variant="h6" color="grey">
+                  <TextTrasition
+                    name="Built out of frustration"
+                    x="-10rem"
+                    y="0em"
+                    initialPosX="0rem"
+                    initialPosY="0em"
+                    initialScale={1}
+                    scale={0}
+                  />
+                </Typography>
+                <Typography variant="h2">
+                  <TextTrasition
+                    name=" Meet the ahead app"
+                    x="-10rem"
+                    y="0em"
+                    initialPosX="0rem"
+                    initialPosY="0em"
+                    initialScale={1}
+                    scale={0}
+                  />
+                </Typography>
               </Box>
-              <Grid container spacing={2} alignItems="center" >
+              <Grid container spacing={2} alignItems="center">
                 <Grid item lg={6}>
-                  <Box component="img" src="/assets/red.png" alt="emote" width={60} m="auto" py={12}/>
+                  <Box
+                    component="img"
+                    src="/assets/red.png"
+                    alt="emote"
+                    width={60}
+                    m="auto"
+                    py={12}
+                  />
                 </Grid>
                 <Grid item lg={5}>
                   <Stack spacing={2} color="grey">
-                    <Typography variant="h6" fontWeight={600} >
-                      A personalized pocket coach that provides bite-sized,
-                      science-driven tools to boost emotional intelligence.
+                    <Typography variant="h6" fontWeight={600}>
+                      <TextTrasition
+                        name="A personalized pocket coach that provides bite-sized,
+                      science-driven tools to boost emotional intelligence."
+                        x="10rem"
+                        y="0em"
+                        initialPosX="0rem"
+                        initialPosY="0em"
+                        initialScale={1}
+                        
+                      />
                     </Typography>
                     <Typography variant="h6" fontWeight={600}>
-                     Think of it as a pocket cheerleader towards a better, more fulfilling.
+                      <TextTrasition
+                        name=" Think of it as a pocket cheerleader towards a better, more
+                      fulfilling."
+                        x="-10rem"
+                        y="0em"
+                        initialPosX="0rem"
+                        initialPosY="0em"
+                        initialScale={1}
+                        
+                      />
                     </Typography>
                   </Stack>
                 </Grid>

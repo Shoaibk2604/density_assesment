@@ -9,14 +9,14 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-
+import {motion} from "framer-motion"
 const Vacancies = () => {
   return (
     <React.Fragment>
       <Box py={6}>
         <Container>
           <Box py={6}>
-            <Typography variant="h2">Open vacancies</Typography>
+            <Typography variant="h2" component={motion.div} initial={{scale:0}} whileInView={{scale:1}}>Open vacancies</Typography>
           </Box>
           <Grid container spacing={4}>
             {Array(3)

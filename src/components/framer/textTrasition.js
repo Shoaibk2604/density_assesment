@@ -11,6 +11,7 @@ const TextTrasition = ({
   initialScale,
   initialPosX,
   initialPosY,
+  duration = "0.8"
 }) => {
   return (
     <>
@@ -19,7 +20,7 @@ const TextTrasition = ({
         sx={{ position: "relative" }}
         initial={{ x: x, y: y, scale: scale }}
         whileInView={{ x: initialPosX, y: initialPosY, scale: initialScale }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: duration}}
       >
         {name}
       </Box>
