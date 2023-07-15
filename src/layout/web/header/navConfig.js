@@ -5,14 +5,14 @@ export const navItems = [
   },
   {
     name: "Manifesto",
-    link: "/about",
+    link: "/",
   },
   {
     name: "Self-awarness test",
-    link: "/jobs",
+    link: "/",
   },
   {
     name: "Work With us",
-    link: "/testimonials",
+    link: "/",
   }
 ];
