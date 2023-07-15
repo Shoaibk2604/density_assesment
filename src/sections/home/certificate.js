@@ -31,6 +31,7 @@ const Certificate = () => {
                 <Box>
                     <StyledBlackBtn >Start a Test</StyledBlackBtn>
                 </Box>
+                <Box><Typography fontWeight={600} color="grey" fontSize="14px">Take only 5 minutes</Typography></Box>
             </Stack>
         </Container>
       </Box>

@@ -5,6 +5,8 @@ import EqBeats from "./eqbeats";
 import SecondBanner from "./secondbanner";
 import ThirdBanner from "./thirdbanner";
 import TotalCard from "./TotalCard";
+import Vacancies from "./vacancies";
+import WorkWithUs from "./workwithus";
 
 const HomeSection = () => {
   return (
@@ -16,6 +18,8 @@ const HomeSection = () => {
       <EqBeats />
       <ThirdBanner/>
       <Certificate/>
+      <WorkWithUs/>
+      <Vacancies/>
     </>
   );
 };

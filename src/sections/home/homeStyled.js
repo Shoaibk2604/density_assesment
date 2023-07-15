@@ -55,9 +55,10 @@ export const StyledBoxBall = styled(Box)(({ theme }) => ({
 }));
 export const StyledBlackBtn = styled(Button)(({ theme }) => ({
   backgroundColor: "#000",
+  px:2,
   color: "#fff",
   borderRadius: "3em",
   ":hover": {
-    backgroundColor: "#000",
+    backgroundColor: "#000000bf",
   },
 }));
