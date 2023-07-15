@@ -25,7 +25,7 @@ const EqBeats = () => {
                 <Typography variant="h6"  fontWeight={400} color="grey">
                   Let your friends, family, and co-workers (anonymously) rate
                   your social skills. Then compare that to how you see yourself.
-                  Maybe you'll find areas to work on...
+                  Maybe you{"'"}ll find areas to work on...
                 </Typography>
               </Box>
             </Grid>
@@ -34,7 +34,7 @@ const EqBeats = () => {
               <Typography variant="h6"  fontWeight={400} color="grey">
                   Let your friends, family, and co-workers (anonymously) rate
                   your social skills. Then compare that to how you see yourself.
-                  Maybe you'll find areas to work on...
+                  Maybe you{"'"}ll find areas to work on...
                 </Typography>
               </Box>
             </Grid>

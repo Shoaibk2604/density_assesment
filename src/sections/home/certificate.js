@@ -20,7 +20,7 @@ const Certificate = () => {
                 </Box>
                 <Box color="grey">
                     <Typography variant='h5'>
-                        "We Won{"'"}t share your answers with anyone (and won{"'"}t ever tell you which friends said what about you)"
+                        {'"'}We Won{"'"}t share your answers with anyone (and won{"'"}t ever tell you which friends said what about you){'"'}
                     </Typography>
                 </Box>
                 <Box>
