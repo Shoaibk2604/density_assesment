@@ -4,6 +4,7 @@ import Certificate from "./certificate";
 import EqBeats from "./eqbeats";
 import SecondBanner from "./secondbanner";
 import ThirdBanner from "./thirdbanner";
+import TimeLineCom from "./timeline";
 import TotalCard from "./TotalCard";
 import Vacancies from "./vacancies";
 import WorkWithUs from "./workwithus";
@@ -15,6 +16,7 @@ const HomeSection = () => {
       <EqBeats />
       <TotalCard />
       <SecondBanner />
+      <TimeLineCom/>
       <EqBeats />
       <ThirdBanner/>
       <Certificate/>
