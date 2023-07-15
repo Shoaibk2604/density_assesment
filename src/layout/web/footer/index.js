@@ -17,7 +17,7 @@ const Footer = () => {
               spacing={{ lg: 8, md: 8, sm: 3, xs: 3 }}
               justifyContent="center"
             >
-              <Grid item lg={12} md={12} sm={12} xs={12}>
+              <Grid item md={12} md={12} sm={12} xs={12}>
                 <SectionOne />
               </Grid>
             </Grid>

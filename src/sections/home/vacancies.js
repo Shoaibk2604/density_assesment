@@ -23,7 +23,7 @@ const Vacancies = () => {
               .fill()
               .map((elem,index) => {
                 return (
-                  <Grid item lg={4} key={index}>
+                  <Grid item md={4} key={index}>
                     <Card sx={{ backgroundColor: "#fff5fd", p: 1 }}>
                       <CardContent>
                         <Stack spacing={1.2}>

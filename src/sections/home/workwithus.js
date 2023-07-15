@@ -42,7 +42,7 @@ const WorkWithUs = () => {
                 </Box>
               </Stack>
               <Grid container spacing={30}>
-                <Grid item lg={6} position="relative">
+                <Grid item md={6} position="relative">
                   <Card>
                     <CardContent>
                       <Stack spacing={1}>
@@ -90,7 +90,7 @@ const WorkWithUs = () => {
                   </Box>
                 </Grid>
 
-                <Grid item lg={6}>
+                <Grid item md={6}>
                   <Box
                     height="30em"
                     sx={{ overflow: "hidden", overflowY: "scroll" }}
@@ -99,7 +99,7 @@ const WorkWithUs = () => {
                       .fill()
                       .map((elem, index) => {
                         return (
-                          <Card sx={{ my: 3, mx: 2 }}>
+                          <Card sx={{ my: 3, mx: 2 }} key={index}>
                             <CardContent>
                               <Stack spacing={2}>
                                 <Box>

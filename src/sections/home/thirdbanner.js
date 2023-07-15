@@ -46,7 +46,7 @@ const ThirdBanner = () => {
             </Stack>
             <Box>
               <Grid container textAlign="center" py={5}>
-                <Grid item lg={4}>
+                <Grid item md={4}>
                   <Box
                     component={motion.div}
                     initial={{ scale: 0, rotate: -360 }}
@@ -75,7 +75,7 @@ const ThirdBanner = () => {
                     Answer Questions on your social skills
                   </Typography>
                 </Grid>
-                <Grid item lg={4}>
+                <Grid item md={4}>
                   <Box
                     component={motion.div}
                     initial={{ scale: 0 }}
@@ -104,7 +104,7 @@ const ThirdBanner = () => {
                     Let others anonymously answer the same quetions about you
                   </Typography>
                 </Grid>
-                <Grid item lg={4}>
+                <Grid item md={4}>
                   <Box
                     component={motion.div}
                     initial={{ scale: 0, rotate: 360 }}

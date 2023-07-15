@@ -52,7 +52,7 @@ const SecondBanner = () => {
                 </Typography>
               </Box>
               <Grid container spacing={2} alignItems="center">
-                <Grid item lg={6}>
+                <Grid item md={6}>
                   <Box
                     component="img"
                     src="/assets/red.png"
@@ -62,7 +62,7 @@ const SecondBanner = () => {
                     py={12}
                   />
                 </Grid>
-                <Grid item lg={5}>
+                <Grid item md={5}>
                   <Stack spacing={2} color="grey">
                     <Typography variant="h6" fontWeight={600}>
                       <TextTrasition

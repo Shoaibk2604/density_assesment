@@ -53,7 +53,7 @@ const Header = (props) => {
           navItems.length &&
           navItems.map((item, index) => {
             return (
-              <React.Fragment key={`parent-${index}`}>
+              <React.Fragment key={index}>
                 <ListItem disablePadding onClick={handleDrawerToggle}>
                   <ListItemButton
                     LinkComponent={Link}
@@ -76,7 +76,7 @@ const Header = (props) => {
   return (
     <>
       <AppBar component="nav" position="fixed" color="inherit" sx={{ boxShadow:"none"}}>
-        <Container maxWidth>
+        <Container >
           <Toolbar
             sx={{
               justifyContent: {
@@ -106,8 +106,8 @@ const Header = (props) => {
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems &&
                 navItems.length &&
-                navItems.map((item) => (
-                  <>
+                navItems.map((item,index) => (
+                  <React.Fragment key={index}>
                     <Button
                       component={Link}
                       href={item.link}
@@ -118,7 +118,7 @@ const Header = (props) => {
                     >
                       {item?.name}
                     </Button>
-                  </>
+                  </React.Fragment>
                 ))}
             </Box>
             <Box>
