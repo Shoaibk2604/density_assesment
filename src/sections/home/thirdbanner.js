@@ -4,6 +4,7 @@ import {
   CardContent,
   Container,
   Grid,
+  Stack,
   Typography,
 } from "@mui/material";
 import React from "react";
@@ -13,9 +14,9 @@ const ThirdBanner = () => {
   return (
     <React.Fragment>
       <Container sx={{ position: "relative" }}>
-        <Card sx={{ backgroundColor: "#eff5ff" }}>
+        <Card sx={{ backgroundColor: "#eff5ff",py:6,px:6 }}>
           <CardContent>
-            <Box textAlign="center">
+            <Stack spacing={2} textAlign="center">
               <Typography variant="h6">
                 Let Your Friends, family, and co-workers (anonymously) rate your
                 social skills.
@@ -23,7 +24,7 @@ const ThirdBanner = () => {
               <Typography variant="h2">
                 Ever wondered what others think of you?
               </Typography>
-            </Box>
+            </Stack>
             <Box>
               <Grid container textAlign="center" py={5}>
                 <Grid item lg={4}>

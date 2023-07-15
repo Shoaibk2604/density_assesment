@@ -23,6 +23,7 @@ const SectionOne = () => {
             <Typography color="#000">hi@xyz.com</Typography>
           </Stack>
         </Stack>
+          <Box component="img" src="/assets/appstore.png" width={180} />
       </Stack>
     </>
   );

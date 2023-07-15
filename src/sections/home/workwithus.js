@@ -14,7 +14,7 @@ const WorkWithUs = () => {
     <React.Fragment>
       <Box py={5}>
         <Container>
-          <Card sx={{ backgroundColor: "#f2f3fd", py:2 }}>
+          <Card sx={{ backgroundColor: "#f2f3fd", py:2,px:4 }}>
             <CardContent>
               <Stack direction="row" justifyContent="space-between" py={5}>
                 <Box>

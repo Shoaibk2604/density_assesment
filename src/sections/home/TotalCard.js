@@ -8,12 +8,12 @@ const TotalCard = () => {
       <Box py={10}>
         <Container>
           <Stack direction="row" spacing={2} pb={6}>
-            <Typography variant="h3">Does This Sound familiar...</Typography>
+            <Typography variant="h2">Does This Sound familiar...</Typography>
             <Box
               component="img"
               src="/assets/redd.png"
               alt="emoji"
-              width={50}
+              width={80}
             />
           </Stack>
         </Container>
