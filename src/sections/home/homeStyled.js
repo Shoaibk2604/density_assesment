@@ -4,6 +4,8 @@ export const StyledBox = styled(Box)(({ theme }) => ({
   backgroundColor: "#f6f6f7",
   padding: "5em",
   borderRadius: "3em",
+  position:"relative",
+  overflow:"hidden"
 }));
 export const StyledIconBox = styled(Box)(({ theme }) => ({
   textAlign: "center",
