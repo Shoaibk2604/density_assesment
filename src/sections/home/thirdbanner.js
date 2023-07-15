@@ -85,7 +85,7 @@ const ThirdBanner = () => {
                     <Box
                       m="auto"
                       component="img"
-                      src="/assets/badgetwo.png"
+                      src="/assets/Badgetwo.png"
                       alt="badge"
                       width={60}
                     />

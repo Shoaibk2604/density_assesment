@@ -55,7 +55,7 @@ const SecondBanner = () => {
                 <Grid item md={6}>
                   <Box
                     component="img"
-                    src="/assets/red.png"
+                    src="/assets/Red.png"
                     alt="emote"
                     width={60}
                     m="auto"
